@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#28392e">
+  <meta name="description" content="One little love note at a time, just for you.">
+  <title>A Thousand Little Love Notes | My Loved Baby Tulsi</title>
+  <link rel="canonical" href="https://ibratulsi.github.io/For-tulsi/letters.html">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="A Thousand Little Love Notes | My Loved Baby Tulsi">
+  <meta property="og:description" content="One little love note at a time, just for you.">
+  <meta property="og:url" content="https://ibratulsi.github.io/For-tulsi/letters.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f6f1e8;
+      --ink: #28392e;
+      --moss: #465c49;
+      --coral: #df684c;
+      --serif: "Playfair Display", Georgia, serif;
+      --sans: "DM Sans", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); }
+    a { color: inherit; }
+    .topbar {
+      position: absolute;
+      z-index: 2;
+      inset: 0 0 auto;
+      min-height: 78px;
+      padding: 0 6.2vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #fff;
+      border-bottom: 1px solid rgba(255,255,255,.3);
+    }
+    .wordmark { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; text-decoration: none; }
+    .brand-mark { width: 30px; height: 30px; flex: 0 0 auto; }
+    .top-link { padding: 10px 14px; border: 1px solid rgba(255,255,255,.65); font-size: 12px; text-decoration: none; white-space: nowrap; }
+    .top-link:hover { background: rgba(255,255,255,.15); }
+    .hero {
+      min-height: 540px;
+      height: 67svh;
+      max-height: 690px;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+      color: white;
+      isolation: isolate;
+      background: #40543c;
+    }
+    .hero-photos { position: absolute; z-index: -2; inset: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+    .hero-photos img { width: 100%; height: 100%; object-fit: cover; object-position: center 45%; }
+    .hero::after { content: ""; position: absolute; z-index: -1; inset: 0; background: linear-gradient(0deg, rgba(22,37,29,.75), rgba(22,37,29,.08) 90%); }
+    .hero-copy { width: min(850px, 86vw); padding: 0 0 66px 10vw; animation: rise .8s both; }
+    .eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
+    h1 { margin: 18px 0 14px; font: 500 clamp(48px, 7vw, 88px)/1.02 var(--serif); }
+    .hero-copy p { max-width: 430px; margin: 0; font-size: 14px; line-height: 1.7; }
+    .notes { max-width: 900px; margin: 0 auto; padding: 76px 32px 96px; text-align: center; }
+    .section-label { color: var(--coral); font-size: 10px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; }
+    .notes h2 { margin: 10px 0 12px; font: 500 clamp(34px, 4vw, 50px)/1.1 var(--serif); }
+    .intro { max-width: 500px; margin: 0 auto; color: #48564b; font-size: 14px; line-height: 1.8; }
+    .note-box { max-width: 650px; min-height: 222px; margin: 38px auto 0; padding: 34px 32px 30px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #e7e8dc; }
+    .note-count { margin: 0; color: var(--moss); font-size: 10px; font-weight: 700; letter-spacing: 1px; }
+    .note-text { max-width: 530px; min-height: 72px; margin: 17px 0 22px; display: grid; place-items: center; font: 500 clamp(21px, 3vw, 28px)/1.5 var(--serif); }
+    .button { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; border: 0; padding: 0 18px; background: var(--ink); color: #fff; font: 700 12px var(--sans); text-decoration: none; cursor: pointer; transition: background .2s, transform .2s; }
+    .button:hover { background: var(--coral); transform: translateY(-2px); }
+    .progress-track { width: min(650px, 100%); height: 2px; margin: 20px auto 0; border: 0; background: #d4d6c9; }
+    .progress-track::-webkit-progress-bar { background: #d4d6c9; }
+    .progress-track::-webkit-progress-value { background: var(--coral); }
+    .progress-track::-moz-progress-bar { background: var(--coral); }
+    .closing { padding: 62px 24px 70px; background: var(--ink); color: #fff; text-align: center; }
+    .closing .section-label { color: #f2ad76; }
+    .closing p { max-width: 440px; margin: 14px auto 23px; font-size: 14px; line-height: 1.8; }
+    .closing .button { background: var(--paper); color: var(--ink); }
+    .closing .button:hover { background: var(--coral); color: #fff; }
+    footer { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 6.2vw; font-size: 10px; }
+    .footer-brand { color: var(--ink); }
+    @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+    @media (max-width: 700px) {
+      .topbar { min-height: 68px; padding: 0 22px; }
+      .wordmark { gap: 6px; font-size: 10px; }
+      .brand-mark { width: 26px; height: 26px; }
+      .top-link { padding: 8px 7px; font-size: 9px; }
+      .hero { height: 70svh; min-height: 520px; max-height: none; }
+      .hero-photos img { object-position: center center; }
+      .hero-copy { width: 100%; padding: 0 25px 52px; }
+      h1 { max-width: 560px; font-size: clamp(47px, 11.5vw, 70px); }
+      .notes { padding: 58px 25px 68px; }
+      .note-box { min-height: 240px; padding: 28px 20px; }
+      .note-text { min-height: 96px; font-size: 22px; }
+      .closing { padding: 56px 25px 62px; }
+      footer { padding: 18px 25px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="index.html" aria-label="My Loved Baby Tulsi">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+        <circle cx="20" cy="20" r="19" fill="#f2ad76" />
+        <path d="M20 30.5 8.8 19.8a6.3 6.3 0 0 1 0-8.9 6.3 6.3 0 0 1 8.9 0l2.3 2.3 2.3-2.3a6.3 6.3 0 0 1 8.9 8.9L20 30.5Z" fill="#28392e" />
+      </svg>
+      My Loved Baby Tulsi
+    </a>
+    <a class="top-link" href="memories.html">Our little things</a>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-photos" aria-label="Photos of Tulsi and Ibra">
+        <img src="/Tulsi.jpeg" alt="Tulsi sharing a playful selfie" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=2200&q=85';this.alt='A couple sharing a quiet, affectionate moment together'" fetchpriority="high">
+        <img src="/Ibra.jpeg" alt="A photo of Ibra" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=2200&q=85';this.alt='A couple sharing a quiet, affectionate moment together'">
+      </div>
+      <div class="hero-copy">
+        <span class="eyebrow">One little note at a time</span>
+        <h1 id="page-title">A thousand little love notes.</h1>
+        <p>A small reminder for any moment you need one. Pick a note, and keep it close.</p>
+      </div>
+    </section>
+
+    <section class="notes" aria-labelledby="notes-title">
+      <span class="section-label">Just for you</span>
+      <h2 id="notes-title">A little love, whenever you need it.</h2>
+      <p class="intro">Every note is a small reminder of how special you are. There are 1,000 little combinations to open, one at a time.</p>
+      <div class="note-box">
+        <p class="note-count" id="note-count" aria-live="polite">0 / 1,000</p>
+        <p class="note-text" id="note-text" aria-live="polite">Your first little note is waiting.</p>
+        <button class="button" id="next-note" type="button">Open your first note <span aria-hidden="true">♡</span></button>
+      </div>
+      <progress class="progress-track" id="note-progress" max="1000" value="0" aria-label="Love notes opened"></progress>
+    </section>
+
+    <section class="closing">
+      <span class="section-label">Whenever you need it</span>
+      <p>Come back for another little reminder. There is always more love to open.</p>
+      <a class="button" href="index.html#note">Read your letter <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="wordmark footer-brand" href="index.html" aria-label="My Loved Baby Tulsi">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+        <circle cx="20" cy="20" r="19" fill="#f2ad76" />
+        <path d="M20 30.5 8.8 19.8a6.3 6.3 0 0 1 0-8.9 6.3 6.3 0 0 1 8.9 0l2.3 2.3 2.3-2.3a6.3 6.3 0 0 1 8.9 8.9L20 30.5Z" fill="#28392e" />
+      </svg>
+      My Loved Baby Tulsi
+    </a>
+    <span>Made with love, just for you.</span>
+  </footer>
+
+  <script>
+    const openings = [
+      "You make ordinary days feel extraordinary.",
+      "Your laugh is one of my favorite sounds.",
+      "Even from far away, you feel like home.",
+      "You have a way of making everything feel softer.",
+      "The world is brighter with you in it.",
+      "Your kindness shows in a hundred tiny ways.",
+      "Even quiet moments feel special when we share them on a call.",
+      "Your smile can turn around my whole day.",
+      "I love how easy it is to be myself with you.",
+      "You make my heart feel safe and understood.",
+      "Every little adventure is better when I can tell you about it.",
+      "You are my favorite thought in the middle of a busy day.",
+      "Even miles between us cannot make you feel far from my heart.",
+      "I admire the way you care about the people you love.",
+      "I feel lucky to have you, no matter how many miles are between us.",
+      "Counting down to seeing you again is one of my favorite plans.",
+      "There is so much goodness in the way you see the world.",
+      "You bring a kind of warmth I never want to take for granted.",
+      "I love the little details that make you uniquely you.",
+      "You make me notice all the lovely things around us.",
+      "Your happiness matters so much to me.",
+      "I would choose another ordinary day with you every time.",
+      "You are more wonderful than you give yourself credit for.",
+      "I am always glad our paths crossed.",
+      "Loving you is one of my favorite parts of being me."
+    ];
+
+    const endings = [
+      "I hope you always feel as loved as you make me feel.",
+      "I am grateful for you today and every day.",
+      "You deserve every gentle, joyful thing life can bring.",
+      "I would find my way back to you in every story.",
+      "Thank you for being exactly who you are.",
+      "I choose you in all the little moments, too.",
+      "Even from far away, I am right here with you.",
+      "I hope something lovely finds you today.",
+      "You make my life feel a little more like magic.",
+      "I will always be cheering you on, from every mile away.",
+      "You are allowed to take up all the space you need.",
+      "I hope you see yourself through my eyes sometime.",
+      "You make being here feel like a gift.",
+      "I am so glad this world has you in it.",
+      "You never have to earn the love I have for you.",
+      "I hope today is gentle with your beautiful heart.",
+      "You are worth every kind word I could ever write.",
+      "My favorite plans always seem to include our next call.",
+      "I will keep finding new reasons to adore you.",
+      "You make home feel less like a place and more like a person.",
+      "I love every version of you, even the tired ones.",
+      "You deserve to be celebrated on ordinary days, too.",
+      "I hope you never forget how much you matter to me.",
+      "I would save the best stories from my day for our next call.",
+      "You are my favorite hello and my hardest goodbye.",
+      "Every message from you is a little highlight in my day.",
+      "You make my heart feel understood without saying a word.",
+      "I am proud of the person you are and the person you are becoming.",
+      "I would choose one more call with you over anywhere else in the world.",
+      "You make the future feel like something to look forward to.",
+      "Even from far away, you can always lean on me.",
+      "Your soft heart is one of the strongest things about you.",
+      "I am saving a hug for the next time I see you.",
+      "You are more than enough, exactly as you are.",
+      "I am on your side, on the easy days and the hard ones.",
+      "You deserve a love that feels patient, safe, and true.",
+      "I will never get tired of choosing you.",
+      "One more day down means one day closer to seeing you again.",
+      "I hope you feel a little extra loved today.",
+      "You are one of the best things that ever happened to me."
+    ];
+
+    const notes = openings.flatMap((opening) => endings.map((ending) => `${opening} ${ending}`));
+    const noteText = document.querySelector("#note-text");
+    const noteCount = document.querySelector("#note-count");
+    const noteProgress = document.querySelector("#note-progress");
+    const nextNote = document.querySelector("#next-note");
+    const storageKey = "my-loved-baby-tulsi-opened-notes";
+    const allNoteIndexes = notes.map((_, index) => index);
+    let openedNoteIndexes = [];
+
+    try {
+      const savedIndexes = JSON.parse(window.localStorage.getItem(storageKey) || "[]");
+      if (Array.isArray(savedIndexes)) {
+        openedNoteIndexes = [...new Set(savedIndexes.filter((index) => Number.isInteger(index) && index >= 0 && index < notes.length))];
+      }
+    } catch {
+      openedNoteIndexes = [];
+    }
+
+    function shuffle(items) {
+      for (let index = items.length - 1; index > 0; index -= 1) {
+        const randomIndex = Math.floor(Math.random() * (index + 1));
+        [items[index], items[randomIndex]] = [items[randomIndex], items[index]];
+      }
+      return items;
+    }
+
+    let remainingIndexes = shuffle(allNoteIndexes.filter((index) => !openedNoteIndexes.includes(index)));
+    noteCount.textContent = `${openedNoteIndexes.length.toLocaleString("en-US")} / 1,000`;
+    noteProgress.value = openedNoteIndexes.length;
+    if (openedNoteIndexes.length > 0) {
+      noteText.textContent = openedNoteIndexes.length === notes.length
+        ? "You have opened every little note. They are all yours."
+        : "Welcome back. Your next little note is waiting.";
+      nextNote.innerHTML = openedNoteIndexes.length === notes.length
+        ? "Start a new round <span aria-hidden=\"true\">↻</span>"
+        : "Open your next note <span aria-hidden=\"true\">♡</span>";
+    }
+
+    nextNote.addEventListener("click", () => {
+      if (remainingIndexes.length === 0) {
+        openedNoteIndexes = [];
+        remainingIndexes = shuffle([...allNoteIndexes]);
+      }
+
+      const noteIndex = remainingIndexes.pop();
+      openedNoteIndexes.push(noteIndex);
+      try {
+        window.localStorage.setItem(storageKey, JSON.stringify(openedNoteIndexes));
+      } catch {
+        // Keep the notes usable when browser storage is unavailable.
+      }
+
+      noteText.textContent = notes[noteIndex];
+      noteCount.textContent = `${openedNoteIndexes.length.toLocaleString("en-US")} / 1,000`;
+      noteProgress.value = openedNoteIndexes.length;
+      nextNote.innerHTML = openedNoteIndexes.length === 1000
+        ? "Start the little notes again <span aria-hidden=\"true\">↻</span>"
+        : "Open another note <span aria-hidden=\"true\">♡</span>";
+    });
+  </script>
+</body>
+</html>

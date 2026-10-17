@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#28392e">
+  <meta name="description" content="A few little things I love about you.">
+  <title>Our Little Things | My Loved Baby Tulsi</title>
+  <link rel="canonical" href="https://ibratulsi.github.io/For-tulsi/memories.html">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Our Little Things | My Loved Baby Tulsi">
+  <meta property="og:description" content="A few little things I love about you.">
+  <meta property="og:url" content="https://ibratulsi.github.io/For-tulsi/memories.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f6f1e8;
+      --ink: #28392e;
+      --moss: #465c49;
+      --coral: #df684c;
+      --serif: "Playfair Display", Georgia, serif;
+      --sans: "DM Sans", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); }
+    a { color: inherit; }
+    .topbar {
+      position: absolute;
+      z-index: 2;
+      inset: 0 0 auto;
+      min-height: 78px;
+      padding: 0 6.2vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #fff;
+      border-bottom: 1px solid rgba(255,255,255,.3);
+    }
+    .wordmark { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; text-decoration: none; }
+    .brand-mark { width: 30px; height: 30px; flex: 0 0 auto; }
+    .top-link { padding: 10px 14px; border: 1px solid rgba(255,255,255,.65); font-size: 12px; text-decoration: none; white-space: nowrap; }
+    .top-link:hover { background: rgba(255,255,255,.15); }
+    .hero {
+      min-height: 540px;
+      height: 66svh;
+      max-height: 680px;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+      color: white;
+      isolation: isolate;
+      background: #40543c;
+    }
+    .hero-photos { position: absolute; z-index: -2; inset: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+    .hero-photos img { width: 100%; height: 100%; object-fit: cover; object-position: center 45%; }
+    .hero::after { content: ""; position: absolute; z-index: -1; inset: 0; background: linear-gradient(0deg, rgba(22,37,29,.72), rgba(22,37,29,.06) 90%); }
+    .hero-copy { width: min(850px, 86vw); padding: 0 0 66px 10vw; animation: rise .8s both; }
+    .eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
+    h1 { margin: 18px 0 14px; font: 500 clamp(48px, 7vw, 88px)/1.02 var(--serif); }
+    .hero-copy p { max-width: 420px; margin: 0; font-size: 14px; line-height: 1.7; }
+    .notes { max-width: 980px; margin: 0 auto; padding: 76px 32px 82px; }
+    .section-label { color: var(--coral); font-size: 10px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; }
+    .notes h2 { margin: 10px 0 34px; font: 500 clamp(34px, 4vw, 50px)/1.1 var(--serif); }
+    .note { display: grid; grid-template-columns: 70px minmax(0, 1fr); gap: 18px; padding: 25px 0; border-top: 1px solid rgba(40,57,46,.2); }
+    .note-number { color: var(--coral); font: 500 22px/1 var(--serif); }
+    .note h3 { margin: 0 0 8px; font: 500 25px/1.2 var(--serif); }
+    .note p { max-width: 590px; margin: 0; color: #48564b; font-size: 14px; line-height: 1.75; }
+    .closing { padding: 66px 24px 72px; background: #e7e8dc; text-align: center; }
+    .closing h2 { margin: 12px 0 20px; font: 500 clamp(36px, 5vw, 58px)/1.08 var(--serif); }
+    .closing p { max-width: 430px; margin: 0 auto 26px; font-size: 14px; line-height: 1.8; }
+    .closing-actions { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+    .button { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 0 18px; background: var(--ink); color: #fff; font-size: 12px; font-weight: 700; text-decoration: none; transition: background .2s, transform .2s; }
+    .button:hover { background: var(--coral); transform: translateY(-2px); }
+    footer { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 6.2vw; font-size: 10px; }
+    .footer-brand { color: var(--ink); }
+    @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+    @media (max-width: 700px) {
+      .topbar { min-height: 68px; padding: 0 22px; }
+      .wordmark { gap: 6px; font-size: 10px; }
+      .brand-mark { width: 26px; height: 26px; }
+      .top-link { padding: 8px 7px; font-size: 9px; }
+      .hero { height: 70svh; min-height: 520px; max-height: none; }
+      .hero-photos img { object-position: center center; }
+      .hero-copy { width: 100%; padding: 0 25px 52px; }
+      h1 { max-width: 520px; font-size: clamp(48px, 12vw, 70px); }
+      .notes { padding: 58px 25px 64px; }
+      .note { grid-template-columns: 40px minmax(0, 1fr); gap: 12px; padding: 22px 0; }
+      .note h3 { font-size: 22px; }
+      .note p { font-size: 13px; }
+      .closing { padding: 58px 25px 64px; }
+      .closing-actions { flex-direction: column; align-items: center; }
+      footer { padding: 18px 25px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="index.html" aria-label="My Loved Baby Tulsi">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+        <circle cx="20" cy="20" r="19" fill="#f2ad76" />
+        <path d="M20 30.5 8.8 19.8a6.3 6.3 0 0 1 0-8.9 6.3 6.3 0 0 1 8.9 0l2.3 2.3 2.3-2.3a6.3 6.3 0 0 1 8.9 8.9L20 30.5Z" fill="#28392e" />
+      </svg>
+      My Loved Baby Tulsi
+    </a>
+    <a class="top-link" href="index.html#note">Back to your letter</a>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-photos" aria-label="Photos of Tulsi and Ibra">
+        <img src="/Tulsi.jpeg" alt="Tulsi sharing a playful selfie" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=2200&q=85';this.alt='A couple sharing a quiet, affectionate moment together'" fetchpriority="high">
+        <img src="/Ibra.jpeg" alt="A photo of Ibra" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=2200&q=85';this.alt='A couple sharing a quiet, affectionate moment together'">
+      </div>
+      <div class="hero-copy">
+        <span class="eyebrow">A page just for you</span>
+        <h1 id="page-title">A few little things I love about you.</h1>
+        <p>Not a complete list. Just a few things I hope you never forget.</p>
+      </div>
+    </section>
+
+    <section class="notes" aria-labelledby="notes-title">
+      <span class="section-label">The little things</span>
+      <h2 id="notes-title">You make them mean everything.</h2>
+      <article class="note">
+        <span class="note-number">01</span>
+        <div>
+          <h3>The way you make ordinary days feel special.</h3>
+          <p>Even from far away, a message from you can make an ordinary day feel special.</p>
+        </div>
+      </article>
+      <article class="note">
+        <span class="note-number">02</span>
+        <div>
+          <h3>Your laugh.</h3>
+          <p>It is one of my favorite sounds. I hope I get to hear it on our next call.</p>
+        </div>
+      </article>
+      <article class="note">
+        <span class="note-number">03</span>
+        <div>
+          <h3>The way we stay close, miles apart.</h3>
+          <p>No big plans needed. A call, a message, and knowing we're here for each other mean so much.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="closing">
+      <span class="section-label">Always</span>
+      <h2>You are my favorite little thing.</h2>
+      <p>And my favorite big thing, too. There is always more I could say, but for now, just remember: I love you.</p>
+      <div class="closing-actions">
+        <a class="button" href="index.html#note">Read your letter <span aria-hidden="true">↗</span></a>
+        <a class="button" href="letters.html">Open a thousand little notes <span aria-hidden="true">♡</span></a>
+        <a class="button" href="story.html">See our little story <span aria-hidden="true">↗</span></a>
+        <a class="button" href="favorites.html">Our favourite things <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="wordmark footer-brand" href="index.html" aria-label="My Loved Baby Tulsi">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+        <circle cx="20" cy="20" r="19" fill="#f2ad76" />
+        <path d="M20 30.5 8.8 19.8a6.3 6.3 0 0 1 0-8.9 6.3 6.3 0 0 1 8.9 0l2.3 2.3 2.3-2.3a6.3 6.3 0 0 1 8.9 8.9L20 30.5Z" fill="#28392e" />
+      </svg>
+      My Loved Baby Tulsi
+    </a>
+    <span>Made with love, just for you.</span>
+  </footer>
+</body>
+</html>

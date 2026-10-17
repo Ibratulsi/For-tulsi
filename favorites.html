@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#202020">
+  <meta name="description" content="A few of Ibra and Tulsi's favorite things.">
+  <title>Our Favourites | My Loved Baby Tulsi</title>
+  <link rel="canonical" href="https://ibratulsi.github.io/For-tulsi/favorites.html">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Our Favourites | My Loved Baby Tulsi">
+  <meta property="og:description" content="A few of Ibra and Tulsi's favorite things.">
+  <meta property="og:url" content="https://ibratulsi.github.io/For-tulsi/favorites.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f6f1e8;
+      --ink: #252524;
+      --red: #bd3737;
+      --muted: #66645f;
+      --line: rgba(37, 37, 36, .2);
+      --serif: "Playfair Display", Georgia, serif;
+      --sans: "DM Sans", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); }
+    a { color: inherit; }
+    .topbar { min-height: 78px; padding: 0 6.2vw; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
+    .wordmark { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; text-decoration: none; }
+    .brand-mark { width: 30px; height: 30px; flex: 0 0 auto; }
+    .top-link { padding: 10px 14px; border: 1px solid var(--ink); font-size: 12px; text-decoration: none; white-space: nowrap; }
+    .top-link:hover { background: var(--ink); color: white; }
+    .hero { min-height: 480px; height: 62svh; max-height: 620px; position: relative; display: grid; grid-template-columns: 1fr 1fr; overflow: hidden; isolation: isolate; background: #34312f; color: #fff; }
+    .hero-photo { position: relative; min-width: 0; }
+    .hero-photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    .hero-photo:first-child img { object-position: center 35%; }
+    .hero-photo:last-child img { object-position: center 35%; }
+    .hero-photo::after { content: ""; position: absolute; inset: 40% 0 0; background: linear-gradient(transparent, rgba(24, 24, 23, .66)); }
+    .hero-name { position: absolute; z-index: 1; bottom: 24px; left: 28px; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+    .hero-title { position: absolute; z-index: 2; top: 50%; left: 50%; width: min(680px, 80vw); margin: 0; transform: translate(-50%, -50%); text-align: center; font: 500 clamp(46px, 7vw, 84px)/1.02 var(--serif); text-shadow: 0 2px 20px rgba(0,0,0,.28); }
+    .hero-title span { color: #f0a0a0; }
+    .intro { max-width: 850px; margin: 0 auto; padding: 70px 32px 35px; text-align: center; }
+    .eyebrow { color: var(--red); font-size: 10px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; }
+    .intro h2 { margin: 12px 0 13px; font: 500 clamp(34px, 4.3vw, 52px)/1.08 var(--serif); }
+    .intro p { max-width: 500px; margin: 0 auto; color: var(--muted); font-size: 14px; line-height: 1.8; }
+    .comparison { max-width: 1000px; margin: 0 auto; padding: 0 32px 82px; }
+    .comparison-head, .favorite-row { display: grid; grid-template-columns: minmax(150px, .8fr) 1fr 1fr; column-gap: 24px; }
+    .comparison-head { padding: 14px 0; border-bottom: 1px solid var(--ink); color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; }
+    .favorite-row { min-height: 104px; align-items: center; border-bottom: 1px solid var(--line); }
+    .favorite-row h3 { margin: 0; font: 500 23px/1.15 var(--serif); }
+    .person-value { display: flex; align-items: center; gap: 12px; font-size: 14px; line-height: 1.5; }
+    .swatch { width: 32px; height: 32px; flex: 0 0 auto; border: 1px solid rgba(37,37,36,.25); border-radius: 50%; }
+    .swatch-black { background: #171717; }
+    .swatch-red { background: #bd3737; }
+    .category-icon { width: 30px; flex: 0 0 auto; color: var(--red); font: 500 20px/1 var(--serif); text-align: center; }
+    .closing { padding: 62px 24px 70px; background: #e9e3dc; text-align: center; }
+    .closing h2 { margin: 12px 0 18px; font: 500 clamp(35px, 5vw, 58px)/1.08 var(--serif); }
+    .closing p { max-width: 450px; margin: 0 auto 24px; color: var(--muted); font-size: 14px; line-height: 1.8; }
+    .button { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 0 18px; background: var(--ink); color: #fff; font-size: 12px; font-weight: 700; text-decoration: none; transition: background .2s, transform .2s; }
+    .button:hover { background: var(--red); transform: translateY(-2px); }
+    footer { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 6.2vw; font-size: 10px; }
+    .footer-brand { color: var(--ink); }
+    @media (max-width: 700px) {
+      .topbar { min-height: 68px; padding: 0 22px; }
+      .wordmark { gap: 6px; font-size: 10px; }
+      .brand-mark { width: 26px; height: 26px; }
+      .top-link { padding: 8px 7px; font-size: 9px; }
+      .hero { min-height: 440px; height: 62svh; max-height: 560px; }
+      .hero-name { bottom: 16px; left: 12px; font-size: 9px; }
+      .hero-title { width: 92vw; font-size: clamp(43px, 11vw, 64px); }
+      .intro { padding: 54px 25px 28px; }
+      .comparison { padding: 0 22px 64px; }
+      .comparison-head, .favorite-row { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 12px; }
+      .comparison-head span:first-child { grid-column: 1 / -1; }
+      .comparison-head span:nth-child(2), .comparison-head span:nth-child(3) { padding-top: 10px; }
+      .favorite-row { padding: 18px 0; row-gap: 13px; }
+      .favorite-row h3 { grid-column: 1 / -1; font-size: 21px; }
+      .person-value { align-items: flex-start; gap: 8px; font-size: 12px; }
+      .swatch { width: 25px; height: 25px; }
+      .category-icon { width: 25px; font-size: 18px; }
+      .closing { padding: 54px 25px 60px; }
+      footer { padding: 18px 25px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="index.html" aria-label="My Loved Baby Tulsi">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+        <circle cx="20" cy="20" r="19" fill="#bd3737" />
+        <path d="M20 30.5 8.8 19.8a6.3 6.3 0 0 1 0-8.9 6.3 6.3 0 0 1 8.9 0l2.3 2.3 2.3-2.3a6.3 6.3 0 0 1 8.9 8.9L20 30.5Z" fill="#fff" />
+      </svg>
+      My Loved Baby Tulsi
+    </a>
+    <a class="top-link" href="memories.html">Our little things</a>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Ibra and Tulsi">
+      <div class="hero-photo">
+        <img src="/Ibra.jpeg" alt="Ibra smiling" fetchpriority="high">
+        <span class="hero-name">Ibra</span>
+      </div>
+      <div class="hero-photo">
+        <img src="/Tulsi.jpeg" alt="Tulsi smiling" fetchpriority="high">
+        <span class="hero-name">Tulsi</span>
+      </div>
+      <h1 class="hero-title">A few things that make <span>us, us.</span></h1>
+    </section>
+
+    <section class="intro">
+      <span class="eyebrow">Different favorites, one favorite person</span>
+      <h2>Little things that tell our story.</h2>
+      <p>A few favorites, side by side. Some match, some don't, and that is part of what makes us us.</p>
+    </section>
+
+    <section class="comparison" aria-label="Ibra and Tulsi's favorite things">
+      <div class="comparison-head"><span>Favorite things</span><span>Ibra</span><span>Tulsi</span></div>
+      <div class="favorite-row">
+        <h3>Color</h3>
+        <div class="person-value"><span class="swatch swatch-black" aria-hidden="true"></span><span>Black</span></div>
+        <div class="person-value"><span class="swatch swatch-red" aria-hidden="true"></span><span>Red</span></div>
+      </div>
+      <div class="favorite-row">
+        <h3>Animal</h3>
+        <div class="person-value"><span class="category-icon" aria-hidden="true">🐈</span><span>A cat</span></div>
+        <div class="person-value"><span class="category-icon" aria-hidden="true">🐈</span><span>A cat</span></div>
+      </div>
+      <div class="favorite-row">
+        <h3>Food</h3>
+        <div class="person-value"><span class="category-icon" aria-hidden="true">01</span><span>Kebab / shawarma</span></div>
+        <div class="person-value"><span class="category-icon" aria-hidden="true">02</span><span>Too many favorites to choose from</span></div>
+      </div>
+      <div class="favorite-row">
+        <h3>Music</h3>
+        <div class="person-value"><span class="category-icon" aria-hidden="true">♪</span><span>“Ma Chérie” and “Ricco” — Baby Gang</span></div>
+        <div class="person-value"><span class="category-icon" aria-hidden="true">♪</span><span>“Gangster Wife”</span></div>
+      </div>
+      <div class="favorite-row">
+        <h3>Game</h3>
+        <div class="person-value"><span class="category-icon" aria-hidden="true">🎮</span><span>Brawl Stars</span></div>
+        <div class="person-value"><span class="category-icon" aria-hidden="true">🎮</span><span>Roblox</span></div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <span class="eyebrow">Miles apart, favorites shared</span>
+      <h2>And my favorite person is still you.</h2>
+      <p>Even from far away, it's the little things about each other that make us feel close.</p>
+      <a class="button" href="story.html">See our little story <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="wordmark footer-brand" href="index.html" aria-label="My Loved Baby Tulsi">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+        <circle cx="20" cy="20" r="19" fill="#bd3737" />
+        <path d="M20 30.5 8.8 19.8a6.3 6.3 0 0 1 0-8.9 6.3 6.3 0 0 1 8.9 0l2.3 2.3 2.3-2.3a6.3 6.3 0 0 1 8.9 8.9L20 30.5Z" fill="#fff" />
+      </svg>
+      My Loved Baby Tulsi
+    </a>
+    <span>Made with love, just for you.</span>
+  </footer>
+</body>
+</html>

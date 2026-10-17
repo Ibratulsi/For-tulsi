@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ibratulsi.github.io/For-tulsi/sitemap.xml
